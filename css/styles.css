@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.header{
+    background-color: #D1891C;
+    color: #000000;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 38px;
+    padding-left: 15px;
+    padding-top: 10px;
+    display: flex;
+    
+}
+.navegador{
+    background-color: #00669F;
+    font-size: 3em;
+    height: 66px;
+    padding-left: 15px; 
+    padding-top: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+
+.heroes{
+    color: #ffffff;
+}
+#card-section>div {
+    display: flex;
+    
+}
+
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
+    margin: 20px 10px;
+    
+}
+
+.card>h2 {
+    color: #000000;
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: center;
+}
+.texto-contenedor{
+    background-color: #f3f3f3;
+    text-align: center;
+}
+.texto{
+    color: #000000;
+    font-size: 0.8em;
+    margin: 20px 0;
+    text-align: start;
+}
+.corazon{
+    width: 3vw;
+    height: 3vw;
+}
+
+.circulo {
+    top: 125px;
+    left: 90px;
+}
+
+.img-batman, .img-mujer, .img-superman, .img-harley {
+    max-width: 100%;
+}
+
+.ver-mas{
+    text-decoration: none;
+    color: #fff;
+    background-color: #00669F;
+    padding: 10px 40px; 
+}   
+
+.pie-pagina {
+    background-color:#00669F;
+    color: #ffffff;
+    height: 51px;
+    font-size: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: space-evenly;
+    align-items:center ;
+}
+
+.logo{
+    display: flex;
+    width: 7vw;
+    align-items: end;
+    padding-left: 0px;
+}
+
+.mas {
+    border-radius: 50% 50%;
+    padding: 2vw 2vw;
+    height: 5vw;
+    width: 5vw;
+    background-color: #00669f;
+    position: fixed;
+    bottom: 6vh;
+    right: 10vw;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px){
+    #card-section>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;        
+    }
+}
+
+@media screen and (max-width: 480px){
+    .bg-header {
+        height: 94vh;
+    }
+
+    #card-section, #contact-section {
+        padding: 40px 7px;
+    }
+}
